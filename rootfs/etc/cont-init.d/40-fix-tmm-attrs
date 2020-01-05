@@ -1,0 +1,24 @@
+#!/usr/bin/with-contenv bash
+
+set -u # Unset Variables are an error
+set -e # Exit on error
+
+# Ensure Data folder Exists
+DATA_PATH='/config/data'
+if [ ! -d $DATA_PATH ]; then
+	echo "First boot with mounted /config/data detected."
+	mkdir -p $DATA_PATH
+	chown -R 900:900 $DATA_PATH
+	chmod -R 0755 $DATA_PATH
+fi
+
+
+# Ensure Data folder Exists
+LOG_PATH='/config/log'
+if [ ! -d $LOG_PATH ]; then
+	echo "First boot with mounted /config/log detected."
+	mkdir -p $LOG_PATH
+	touch /config/log/launcher.log
+	chown -R 900:900 $LOG_PATH
+	chmod -R 0755 $LOG_PATH
+fi
