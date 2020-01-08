@@ -1,4 +1,8 @@
- [![Build Status](https://travis-ci.com/chris102994/docker-tinymediamanager.svg?branch=master)](https://travis-ci.com/chris102994/docker-tinymediamanager)
+## [chris102994/docker-docker-tinymediamanager](https://github.com/chris102994/docker-tinymediamanager)
+
+[![https://www.tinymediamanager.org/](https://gitlab.com/uploads/-/system/user/avatar/2501205/avatar.png?width=400)](https://www.tinymediamanager.org/)
+
+[![Build Status](https://travis-ci.com/chris102994/docker-tinymediamanager.svg?branch=master)](https://travis-ci.com/chris102994/docker-tinymediamanager)
 
 ## Outside Packages
 * Built on my [Base GUI Image](https://github.com/chris102994/docker-base-image-gui)
@@ -25,3 +29,9 @@ Container specific parameters passed at runtime. The format is `<external>:<inte
 | -v /config | The directory where the application will store configuration information. |
 | -v /tv | The path to your tv shows. |
 | -v /movies | The path to your movies. |
+
+## Application Setup
+
+The admin interface is available at `http://<ip>:<port>/`
+
+Access the mounted files within the web interface at `/tv` and `/movies`
