@@ -6,7 +6,7 @@ ARG VERSION
 
 ENV APP_NAME=TinyMediaManager
 
-ENV TMM_VERSION=3.0.5
+ENV TMM_VERSION=3.1.2
 ENV TMM_DL_URL=https://release.tinymediamanager.org/v3/dist/tmm_${TMM_VERSION}_linux.tar.gz
 
 RUN echo "##### Downloading Virtual Build Dependencies #####" && \
