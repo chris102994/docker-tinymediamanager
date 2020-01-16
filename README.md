@@ -3,8 +3,7 @@
 [![https://www.tinymediamanager.org/](https://gitlab.com/uploads/-/system/user/avatar/2501205/avatar.png?width=400)](https://www.tinymediamanager.org/)
 
 [![Build Status](https://travis-ci.com/chris102994/docker-tinymediamanager.svg?branch=master)](https://travis-ci.com/chris102994/docker-tinymediamanager)
- [![Image Size](https://img.shields.io/microbadger/image-size/christopher102994/docker-tinymediamanager/alpine-3.10)](https://hub.docker.com/repository/docker/christopher102994/docker-tinymediamanager)
- [![Image Layers](https://img.shields.io/microbadger/layers/christopher102994/docker-tinymediamanager/alpine-3.10)](https://hub.docker.com/repository/docker/christopher102994/docker-tinymediamanager)
+[![Microbadger Size & Layers](https://images.microbadger.com/badges/image/christopher102994/docker-tinymediamanager.svg)](https://microbadger.com/images/christopher102994/docker-tinymediamanager "Get your own image badge on microbadger.com")
  [![Image Pulls](https://img.shields.io/docker/pulls/christopher102994/docker-tinymediamanager)](https://hub.docker.com/repository/docker/christopher102994/docker-tinymediamanager)
 
 ## Outside Packages
