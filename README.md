@@ -1,4 +1,4 @@
-## [chris102994/docker-docker-tinymediamanager](https://github.com/chris102994/docker-tinymediamanager)
+## [chris102994/docker-tinymediamanager](https://github.com/chris102994/docker-tinymediamanager)
 
 [![https://www.tinymediamanager.org/](https://gitlab.com/uploads/-/system/user/avatar/2501205/avatar.png?width=400)](https://www.tinymediamanager.org/)
 
