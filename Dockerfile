@@ -12,13 +12,13 @@ ENV TMM_VERSION=3.1.2
 ENV TMM_DL_URL=https://release.tinymediamanager.org/v3/dist/tmm_${TMM_VERSION}_linux.tar.gz
 
 RUN echo "##### Downloading Virtual Build Dependencies #####" && \
-		apk add --no-cache --virtual=build-dependencies \
+		install --virtual build-dependencies \
 			curl \
 			tar \
 			tzdata \
 			xz && \
 	echo "##### Downloading Runtime Packages #####" && \
-		apk add --no-cache \
+		install \
 			openjdk8-jre \
 			libmediainfo \
 			ttf-dejavu && \
@@ -43,7 +43,7 @@ RUN echo "##### Downloading Virtual Build Dependencies #####" && \
 		sed -i 's#APP_COMMAND#/usr/bin/java -jar /app/getdown.jar /app >> /config/log/tinymediamanager.log#g' /etc/xdg/openbox/autostart && \
 		cp /app/tmm.png /etc/noVNC/app/images/icons/novnc-16x16.png && \
 	echo "##### Cleaning Up #####" && \
-		apk del --purge build-dependencies
+		remove build-dependencies
 
 # VNC Web Interface VNC
 EXPOSE 5700 
