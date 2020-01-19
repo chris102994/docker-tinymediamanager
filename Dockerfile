@@ -39,15 +39,9 @@ RUN echo "##### Downloading Virtual Build Dependencies #####" && \
     echo "##### App Setup #####" && \
 		sed -i 's#APP_NAME#TinyMediaManager#g' /etc/xdg/openbox/menu.xml && \
 		sed -i 's#APP_ICON_LOC#/app/tmm.png#g' /etc/xdg/openbox/menu.xml && \
-		sed -i 's#APP_COMMAND#/usr/bin/java -jar /app/getdown.jar /app >> /config/log/tinymediamanager.log#g' /etc/xdg/openbox/menu.xml && \
-		sed -i 's#APP_COMMAND#/usr/bin/java -jar /app/getdown.jar /app >> /config/log/tinymediamanager.log#g' /etc/xdg/openbox/autostart && \
+		sed -i 's#APP_COMMAND#/usr/bin/java -jar /app/getdown.jar /app >> /config/log/tinymediamanager.log#g' /app/start_app.sh && \
 		cp /app/tmm.png /etc/noVNC/app/images/icons/novnc-16x16.png && \
 	echo "##### Cleaning Up #####" && \
 		remove build-dependencies
-
-# VNC Web Interface VNC
-EXPOSE 5700 
 #Work Dir
 WORKDIR /mnt
-# Add Local FIles
-COPY rootfs/ /
