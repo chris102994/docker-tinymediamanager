@@ -12,13 +12,13 @@ ENV TMM_VERSION=3.1.2
 ENV TMM_DL_URL=https://release.tinymediamanager.org/v3/dist/tmm_${TMM_VERSION}_linux.tar.gz
 
 RUN echo "##### Downloading Virtual Build Dependencies #####" && \
-		install --virtual build-dependencies \
+		inst-pkg --virtual build-dependencies \
 			curl \
 			tar \
 			tzdata \
 			xz && \
 	echo "##### Downloading Runtime Packages #####" && \
-		install \
+		inst-pkg \
 			openjdk8-jre \
 			libmediainfo \
 			ttf-dejavu && \
@@ -42,6 +42,6 @@ RUN echo "##### Downloading Virtual Build Dependencies #####" && \
 		sed -i 's#APP_COMMAND#/usr/bin/java -jar /app/getdown.jar /app >> /config/log/tinymediamanager.log#g' /app/start_app.sh && \
 		cp /app/tmm.png /etc/noVNC/app/images/icons/novnc-16x16.png && \
 	echo "##### Cleaning Up #####" && \
-		remove build-dependencies
+		rm-pkg build-dependencies
 #Work Dir
 WORKDIR /mnt
