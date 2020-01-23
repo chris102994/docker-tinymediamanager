@@ -38,8 +38,6 @@ RUN echo "##### Downloading Virtual Build Dependencies #####" && \
 		chown -R 900:900 /movies && \
 		chmod -R 0755 /movies && \
     echo "##### App Setup #####" && \
-		sed -i 's#APP_NAME#TinyMediaManager#g' /etc/xdg/openbox/menu.xml && \
-		sed -i 's#APP_ICON_LOC#/app/tmm.png#g' /etc/xdg/openbox/menu.xml && \
 		sed -i 's#APP_COMMAND#/usr/bin/java -jar /app/getdown.jar /app >> /config/log/tinymediamanager.log#g' /app/start_app.sh && \
 		cp /app/tmm.png /etc/noVNC/app/images/icons/novnc-16x16.png && \
 	echo "##### Cleaning Up #####" && \
