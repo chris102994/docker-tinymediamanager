@@ -42,5 +42,7 @@ RUN echo "##### Downloading Virtual Build Dependencies #####" && \
 		cp /app/tmm.png /etc/noVNC/app/images/icons/novnc-16x16.png && \
 	echo "##### Cleaning Up #####" && \
 		rm-pkg build-dependencies
+VOLUME		["/tv"]
+VOLUME		["/movies"]
 #Work Dir
 WORKDIR /mnt
