@@ -11,22 +11,28 @@ services:
   - docker
 
 git:
-  submodules: true
+  submodules: false
 
 env:
   global:
   - DOCKER_REPO=christopher102994
   - DOCKER_NAME=docker-tinymediamanager
-  - DOCKER_FILE=Dockerfile
-  - IMAGE_TAG=alpine-3.10
-  - BASE_IMAGE=christopher102994/docker-base-img-gui:alpine-3.10
 
+jobs:
+  include:
+  - stage: Alpine Container
+    script:
+      - git submodule update --init --recursive
+      - source tools/scripts/load_env_files.sh versions/alpine-3.10.env
+      - source tools/scripts/versioning.sh 
+      - tools/scripts/make_container.sh
+    deploy:
+        provider: script
+        script: tools/scripts/push_to_registry.sh
 
-script:
-  - tools/scripts/make_container.sh
+  - stage: Git Tag
+    script: 
+      - git submodule update --init --recursive
+      - source tools/scripts/versioning.sh
+      - tools/scripts/push_git_tag.sh
 
-deploy:
-  provider: script
-  script: tools/scripts/push_to_registry.sh
-  on:
-    branch: master

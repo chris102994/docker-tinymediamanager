@@ -19,7 +19,7 @@ docker run \
   	-v </path/to/tv/shows>:/tv \
   	-v </path/to/movies>:/movies \
 	--restart unless-stopped \
-	christopher102994/docker-tinymediamanager:alpine-3.10
+	christopher102994/docker-tinymediamanager:latest
 ```
 
 ## Parameters
