@@ -4,7 +4,8 @@
 
 [![Build Status](https://travis-ci.com/chris102994/docker-tinymediamanager.svg?branch=master)](https://travis-ci.com/chris102994/docker-tinymediamanager)
 [![Microbadger Size & Layers](https://images.microbadger.com/badges/image/christopher102994/docker-tinymediamanager.svg)](https://microbadger.com/images/christopher102994/docker-tinymediamanager "Get your own image badge on microbadger.com")
- [![Image Pulls](https://img.shields.io/docker/pulls/christopher102994/docker-tinymediamanager)](https://hub.docker.com/repository/docker/christopher102994/docker-tinymediamanager)
+[![Image Pulls](https://img.shields.io/docker/pulls/christopher102994/docker-tinymediamanager)](https://hub.docker.com/repository/docker/christopher102994/docker-tinymediamanager)
+ [![Alpine](https://images.microbadger.com/badges/version/christopher102994/docker-tinymediamanager:latest.svg)](https://microbadger.com/images/christopher102994/docker-tinymediamanager:latest "Get your own version badge on microbadger.com")
 
 ## Outside Packages
 * Built on my [Base GUI Image](https://github.com/chris102994/docker-base-image-gui)
