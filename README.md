@@ -32,6 +32,13 @@ Container specific parameters passed at runtime. The format is `<external>:<inte
 | -v /config | The directory where the application will store configuration information. |
 | -v /tv | The path to your tv shows. |
 | -v /movies | The path to your movies. |
+| -e USERNAME | The Username you wish to run as. (Optional) |
+| -e GROUPNAME | The Groupname you wish to run as. (Optional) |
+| -e PUID | The UID you wish to run and save files as. (Optional) |
+| -e PGID | The GID you wish to run and save files as. (Optional) |
+| -e VNC_PASSWORD | Password for the VNC session. (Optional) |
+| -e DISPLAY_WIDTH | VNC Server's display width. (Optional) |
+| -e DISPLAY_HEIGHT | VNC Server's displat height. (Optional) |
 
 ## Application Setup
 
