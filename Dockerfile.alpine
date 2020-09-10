@@ -9,7 +9,7 @@ LABEL org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.vcs-url="https://github.com/chris102994/docker-tinymediamanager"
 ENV APP_NAME=TinyMediaManager
 
-ENV TMM_VERSION=3.1.4
+ENV TMM_VERSION=3.1.8
 ENV TMM_DL_URL=https://release.tinymediamanager.org/v3/dist/tmm_${TMM_VERSION}_linux.tar.gz
 
 RUN echo "##### Downloading Virtual Build Dependencies #####" && \
